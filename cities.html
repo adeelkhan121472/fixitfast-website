@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Areas - Appliance Repair in 25+ Cities | Fix It Fast Appliances</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Fix It Fast Appliances serves 25+ major cities including New York, Los Angeles, Chicago, Houston, Phoenix, Philadelphia, and more. Find professional appliance repair in your area with same-day service.">
+    <meta name="keywords" content="appliance repair near me, appliance repair locations, service areas, New York appliance repair, Los Angeles appliance repair, Chicago appliance repair, local appliance repair">
+    <meta name="author" content="Fix It Fast Appliances">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://fixitfastappliances.site/cities.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fixitfastappliances.site/cities.html">
+    <meta property="og:title" content="Service Areas - 25+ Cities - Fix It Fast Appliances">
+    <meta property="og:description" content="Fix It Fast Appliances serves 25+ major cities with professional appliance repair. Find same-day service in your area.">
+    <meta property="og:image" content="https://fixitfastappliances.site/images/cities-og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://fixitfastappliances.site/cities.html">
+    <meta name="twitter:title" content="Service Areas - 25+ Cities - Fix It Fast Appliances">
+    <meta name="twitter:description" content="Fix It Fast Appliances serves 25+ major cities with professional appliance repair.">
+    <meta name="twitter:image" content="https://fixitfastappliances.site/images/cities-twitter-image.jpg">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://fixitfastappliances.site/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Service Areas",
+          "item": "https://fixitfastappliances.site/cities.html"
+        }
+      ]
+    }
+    </script>
+
+    <!-- Service Area Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Appliance Repair",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Fix It Fast Appliances"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "New York",
+          "containedIn": {
+            "@type": "State",
+            "name": "New York"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Los Angeles",
+          "containedIn": {
+            "@type": "State",
+            "name": "California"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Chicago",
+          "containedIn": {
+            "@type": "State",
+            "name": "Illinois"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Houston",
+          "containedIn": {
+            "@type": "State",
+            "name": "Texas"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Phoenix",
+          "containedIn": {
+            "@type": "State",
+            "name": "Arizona"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Philadelphia",
+          "containedIn": {
+            "@type": "State",
+            "name": "Pennsylvania"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "San Antonio",
+          "containedIn": {
+            "@type": "State",
+            "name": "Texas"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "San Diego",
+          "containedIn": {
+            "@type": "State",
+            "name": "California"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "Dallas",
+          "containedIn": {
+            "@type": "State",
+            "name": "Texas"
+          }
+        },
+        {
+          "@type": "City",
+          "name": "San Jose",
+          "containedIn": {
+            "@type": "State",
+            "name": "California"
+          }
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">Fix It Fast</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="cities.html" class="active">Service Areas</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Service Areas</h1>
+            <p>Professional appliance repair services in 25+ major cities</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="city-search-section">
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="citySearchInput" placeholder="Search for your city..." class="search-input">
+                <button onclick="searchCities()" class="btn btn-primary">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cities Grid Section -->
+    <section class="cities-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCities('all')">All Cities</button>
+                <button class="filter-btn" onclick="filterCities('east')">East Coast</button>
+                <button class="filter-btn" onclick="filterCities('west')">West Coast</button>
+                <button class="filter-btn" onclick="filterCities('midwest')">Midwest</button>
+                <button class="filter-btn" onclick="filterCities('south')">South</button>
+            </div>
+
+            <div id="citiesGrid" class="cities-grid-detailed">
+                <!-- Cities will be populated by JavaScript -->
+            </div>
+
+            <div id="noResults" class="no-results" style="display: none;">
+                <h3>No cities found</h3>
+                <p>Try searching for a different city or contact us to check if we service your area.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Map Info -->
+    <section class="coverage-info">
+        <div class="container">
+            <h2 class="section-title">Expanding Service Areas</h2>
+            <p class="section-subtitle">We're constantly growing to serve more communities</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3>Can't Find Your City?</h3>
+                    <p>We're expanding! Contact us to check if we service your area or when we'll be available.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🚗</div>
+                    <h3>Same-Day Service</h3>
+                    <p>Most locations offer same-day service for urgent appliance repairs.</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>Average response time of 2 hours or less in all service areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Schedule Service in Your Area</h2>
+            <p>Expert technicians ready to help across all our service locations</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary btn-large">Schedule Service</a>
+                <a href="tel:1-800-FIX-FAST" class="btn btn-outline btn-large">📞 1-800-FIX-FAST</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Fix It Fast Appliances</h4>
+                    <p>Your trusted partner for appliance repair services</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="cities.html">Service Areas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html">Refrigerator Repair</a></li>
+                        <li><a href="services.html">Washer & Dryer</a></li>
+                        <li><a href="services.html">Oven Repair</a></li>
+                        <li><a href="services.html">Dishwasher Repair</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 1-800-FIX-FAST</p>
+                    <p>✉️ info@fixitfastappliances.site</p>
+                    <p>🕐 24/7 Emergency Service</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fix It Fast Appliances. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="cities.js"></script>
+</body>
+</html>
