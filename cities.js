@@ -6,7 +6,9 @@ const citiesData = [
         region: "east",
         population: "8.3M",
         description: "Professional appliance repair services across all five boroughs of New York City.",
-        features: ["24/7 Service", "Same-Day Available", "All Brands"]
+        features: ["24/7 Service", "Same-Day Available", "All Brands"],
+        slug: "new-york-ny",
+        hasPage: true
     },
     {
         name: "Los Angeles",
@@ -14,7 +16,9 @@ const citiesData = [
         region: "west",
         population: "4.0M",
         description: "Fast and reliable appliance repair throughout Los Angeles County.",
-        features: ["Licensed Techs", "90-Day Warranty", "Free Estimates"]
+        features: ["Licensed Techs", "90-Day Warranty", "Free Estimates"],
+        slug: "los-angeles-ca",
+        hasPage: true
     },
     {
         name: "Chicago",
@@ -244,6 +248,15 @@ function displayCities(cities) {
             <div class="city-meta">
                 ${city.features.map(feature => `<span class="meta-tag">✓ ${feature}</span>`).join('')}
             </div>
+            ${city.hasPage ? `
+            <div class="city-actions">
+                <a href="locations/${city.slug}.html" class="btn btn-primary btn-small">View ${city.name} Page →</a>
+            </div>
+            ` : `
+            <div class="city-actions">
+                <a href="contact.html" class="btn btn-secondary btn-small">Schedule Service →</a>
+            </div>
+            `}
         </div>
     `).join('');
 }
